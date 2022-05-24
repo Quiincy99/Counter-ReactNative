@@ -53,11 +53,7 @@ const App = () => {
 
   return (
     <View
-      style={{
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: 10,
-      }}>
+      style={styles.body}>
       <Text
         style={{
           marginBottom: 10,
@@ -74,9 +70,8 @@ const App = () => {
 
       <View
         style={{
-          marginTop:10
-        }}
-      >
+          marginTop: 10,
+        }}>
         <Button
           onPress={() => {
             resetData();
@@ -86,5 +81,14 @@ const App = () => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  body: {
+    flex: 1,
+    backgroundColor: "#ffffff",
+    alignItems:"center",
+    justifyContent: "center"
+  }
+})
 
 export default App;
